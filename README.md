@@ -26,7 +26,7 @@ wool block.
 
 ## How to install
 
-1. Download the [datapack zip file](https://raw.githubusercontent.com/logicalgeekboy/logical-crafting/master/dist/logical-crafting.zip)
+1. Download the [datapack zip file](https://github.com/LogicalGeekBoy/logical-crafting/raw/master/dist/logical-crafting.zip)
 2. On the world selection screen, select your world and click "Edit".
 3. Click "Open World Folder".
 4. Place the datapack zip file in the `datapacks` folder.

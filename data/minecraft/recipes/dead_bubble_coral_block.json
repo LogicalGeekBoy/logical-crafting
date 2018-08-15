@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "group": "dead_coral",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:dead_bubble_coral"
+    }
+  },
+  "result": {
+    "item": "minecraft:dead_bubble_coral_block",
+    "count": 1
+  }
+}

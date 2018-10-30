@@ -1,0 +1,26 @@
+{
+  "display": {
+    "title": "Pickaxe Warning",
+    "description": "A pickaxe is about to break",
+    "icon": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "pickaxe_breaking": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": 25,
+        "item": {
+          "item": "minecraft:diamond_pickaxe"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "logical:warnings/pickaxe_about_to_break"
+  }
+}

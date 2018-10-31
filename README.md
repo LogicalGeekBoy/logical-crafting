@@ -24,6 +24,20 @@ wool block.
 
 ![corrected wool](https://raw.githubusercontent.com/logicalgeekboy/logical-crafting/master/screenshots/wool.png)
 
+## Tool about to break warning
+
+When a diamond pickaxe, shovel, axe or hoe has only 25 durability remaining a warning message is posted in the chat and a
+breaking sound is played.
+
+For testing, you can give yourself these tools just before the warning with:
+
+```
+/give @p minecraft:diamond_pickaxe{Damage:1535} 1
+/give @p minecraft:diamond_shovel{Damage:1535} 1
+/give @p minecraft:diamond_axe{Damage:1535} 1
+/give @p minecraft:diamond_hoe{Damage:1535} 1
+```
+
 ## How to install
 
 1. Download the [datapack zip file](https://github.com/LogicalGeekBoy/logical-crafting/raw/master/dist/logical-crafting.zip)

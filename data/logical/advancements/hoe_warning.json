@@ -1,0 +1,26 @@
+{
+  "display": {
+    "title": "Hoe Warning",
+    "description": "A hoe is about to break",
+    "icon": {
+      "item": "minecraft:diamond_hoe"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "hoe_breaking": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": 25,
+        "item": {
+          "item": "minecraft:diamond_hoe"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "logical:warnings/hoe_about_to_break"
+  }
+}

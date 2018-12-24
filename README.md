@@ -54,6 +54,27 @@ block is placed under your feet as a marker for the centre chunk.
 
 If you don't stand in the north-west corner of a chunk, that's ok but the cleared area will not be chunk aligned.
 
+## Spawn Sphere
+
+Hostile mobs spawn within a sphere with a radius of 128 block around the player. It's important to know about this
+when building a mob farm as you can improve the rates drastically by only allowing mobs to spawn inside your farm.
+Depending on the farm, you can either remove block, light them up or cover them with a non-spawnable block. The problem
+is knowing where this sphere really is.
+
+This datapack contains a function that will summon a number of armour stands which mark this sphere. Just stand on your
+AFK spot and run:
+
+```
+/function logical:spawn_sphere/show
+```
+
+You can then move around and condition the area within this sphere. Once you are done, you can remove the sphere again
+with:
+
+```
+/function logical:spawn_sphere/hide
+```
+
 ## How to install
 
 1. Download the [datapack zip file](https://github.com/LogicalGeekBoy/logical-crafting/raw/master/dist/logical-crafting.zip)

@@ -2,29 +2,45 @@
 #   $ ruby data/logical/functions/spawn_sphere/generate_spawning_sphere_function.rb
 
 class GenerateSphereFunction
-  def initialize(radius: 128, markers: 32)
+  def initialize(radius: 128, markers: 64, marker_name: "logical-spawn-marker")
     @radius = radius
-    @degrees_between_markers = 360.0 / markers.to_f
+    @markers = markers.to_f
+    @marker_name = marker_name
+    @full_marker_name = "\"\\\"#{marker_name}\\\"\""
   end
 
   def generate
     function_file_path = File.join(__dir__, "show.mcfunction")
+    x_degrees_between_markers = 360.0 / markers
 
     File.open(function_file_path, "w") do |file|
-      (-180.0..180.0).step(degrees_between_markers) do |y_rot|
-        (-90.0..90.0).step(degrees_between_markers) do |x_rot|
-          file.puts "tp @s ~ ~ ~ #{y_rot} #{x_rot}"
-          file.puts 'execute at @s run summon minecraft:armor_stand ^ ^ ^128 {CustomName:"\"logical-spawn-marker\"",Invulnerable:1,NoGravity:1}'
+      (-90.0..90.0).step(x_degrees_between_markers) do |x_rot|
+        x_percent = 100.0 - ((x_rot.abs / 90.0) * 100.0)
+
+        if x_percent.positive?
+          y_degrees_between_markers = 360.0 / ((markers / 100.0) * x_percent)
+
+          (-180.0..180.0).step(y_degrees_between_markers) do |y_rot|
+            write_marker_for(x_rot, y_rot, to: file)
+          end
         end
       end
 
-      file.puts "effect give @e[name=logical-spawn-marker] minecraft:glowing 99999 1 true"
+      write_marker_for(0, 90, to: file)
+      write_marker_for(0, -90, to: file)
+
+      file.puts "effect give @e[name=#{marker_name}] minecraft:glowing 99999 1 true"
     end
   end
 
   private
 
-  attr_reader :radius, :degrees_between_markers
+  attr_reader :radius, :markers, :marker_name, :full_marker_name
+
+  def write_marker_for(x_rot, y_rot, to:)
+    to.puts "tp @s ~ ~ ~ #{y_rot} #{x_rot}"
+    to.puts "execute at @s run summon minecraft:armor_stand ^ ^ ^#{radius} {CustomName:#{full_marker_name},Invulnerable:1,NoGravity:1}"
+  end
 end
 
 GenerateSphereFunction.new.generate

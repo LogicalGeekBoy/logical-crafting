@@ -26,8 +26,8 @@ class GenerateSphereFunction
         end
       end
 
-      write_marker_for(0, 90, to: file)
-      write_marker_for(0, -90, to: file)
+      write_marker_for(90, 0, to: file)
+      write_marker_for(-90, 0, to: file)
 
       file.puts "effect give @e[name=#{marker_name}] minecraft:glowing 99999 1 true"
     end

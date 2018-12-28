@@ -2108,8 +2108,8 @@ tp @s ~ ~ ~ 90.0 84.375
 execute at @s run summon minecraft:armor_stand ^ ^ ^128 {CustomName:"\"logical-spawn-marker\"",Invulnerable:1,NoGravity:1}
 tp @s ~ ~ ~ 180.0 84.375
 execute at @s run summon minecraft:armor_stand ^ ^ ^128 {CustomName:"\"logical-spawn-marker\"",Invulnerable:1,NoGravity:1}
-tp @s ~ ~ ~ 90 0
+tp @s ~ ~ ~ 0 90
 execute at @s run summon minecraft:armor_stand ^ ^ ^128 {CustomName:"\"logical-spawn-marker\"",Invulnerable:1,NoGravity:1}
-tp @s ~ ~ ~ -90 0
+tp @s ~ ~ ~ 0 -90
 execute at @s run summon minecraft:armor_stand ^ ^ ^128 {CustomName:"\"logical-spawn-marker\"",Invulnerable:1,NoGravity:1}
 effect give @e[name=logical-spawn-marker] minecraft:glowing 99999 1 true

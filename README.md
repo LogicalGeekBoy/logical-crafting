@@ -24,18 +24,26 @@ wool block.
 
 ![corrected wool](https://raw.githubusercontent.com/logicalgeekboy/logical-crafting/master/screenshots/wool.png)
 
-## Tool about to break warning
+## Other Quality of life recipes
 
-When a diamond pickaxe, shovel, axe or hoe has only 25 durability remaining a warning message is posted in the chat and a
+This datapack has a number of QoL recipes to enhance the game over 100% vanilla but not in a way that breaks the game:
+
+* Uncraft Quartz Block -> 4 Quartz
+* Smelt Sandstone -> Smooth Sandstone (same as 1.14)
+
+## Item about to break warning
+
+When a diamond pickaxe, shovel, axe, hoe or elytra has only 25 durability remaining a warning message is posted in the chat and a
 breaking sound is played.
 
-For testing, you can give yourself these tools just before the warning with:
+For testing, you can give yourself these items just before the warning with:
 
 ```
 /give @p minecraft:diamond_pickaxe{Damage:1535} 1
 /give @p minecraft:diamond_shovel{Damage:1535} 1
 /give @p minecraft:diamond_axe{Damage:1535} 1
 /give @p minecraft:diamond_hoe{Damage:1535} 1
+/give @p minecraft:elytra{Damage:406} 1
 ```
 
 ## Perimeter Clearing

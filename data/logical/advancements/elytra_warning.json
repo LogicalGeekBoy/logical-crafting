@@ -1,0 +1,26 @@
+{
+  "display": {
+    "title": "Elytra Warning",
+    "description": "An elytra is about to break",
+    "icon": {
+      "item": "minecraft:elytra"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "elytra_breaking": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "durability": 25,
+        "item": {
+          "item": "minecraft:elytra"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "logical:warnings/elytra_about_to_break"
+  }
+}

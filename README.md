@@ -1,6 +1,6 @@
 # Logical Crafting
 
-Custom crafting recipes for Minecraft 1.13 that I wish were in the default game:
+Custom crafting recipes for Minecraft 1.14 that I wish were in the default game:
 
 ## Renewable Coral Blocks
 

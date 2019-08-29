@@ -48,6 +48,13 @@ For testing, you can give yourself these items just before the warning with:
 
 ## Perimeter Clearing
 
+DO NOT use this in your survival world unless you know what you are doing. It's intended purpose is to clear perimeters
+in creative mode only when designing farms within "real world" conditions. This functions removes all entities such as
+mobs and items. This is because the clearing operation creates items when some blocks are replaced. Caves can also have
+mobs and minecarts inside them which when designing farms are best removed.
+
+This is not intended for use in a survival world. Use at your own risk!
+
 This datapack contains a function that is useful in creative for creating a perimeter when designing mob farms. To use,
 find a 21x21 chunk area to wish to clear. Go to the centre chunk and stand in the most northwesterly block. Then run
 the following command:
@@ -81,6 +88,17 @@ with:
 
 ```
 /function logical:spawn_sphere/hide
+```
+
+## Villager Clock
+
+In 1.14, villagers now have a schedule where they perform different tasks at set times. It's not always easy to tell
+what part of the schedule a villager is in especially in dimensions without the sun. You can show or hide the clock
+with:
+
+```
+/function logical:clock/on
+/function logical:clock/off
 ```
 
 ## How to install

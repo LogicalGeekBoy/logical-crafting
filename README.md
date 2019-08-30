@@ -101,6 +101,11 @@ with:
 /function logical:clock/off
 ```
 
+## Player Head Drop
+
+Whenever a player dies in anyway, they will drop their head in amongst their gear. As I mainly play in single player
+this isn't just when you are killed by another player but by anyway of dying.
+
 ## How to install
 
 1. Download the [datapack zip file](https://github.com/LogicalGeekBoy/logical-crafting/raw/master/dist/logical-crafting.zip)

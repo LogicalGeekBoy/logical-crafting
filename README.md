@@ -48,26 +48,8 @@ For testing, you can give yourself these items just before the warning with:
 
 ## Perimeter Clearing
 
-DO NOT use this in your survival world unless you know what you are doing. It's intended purpose is to clear perimeters
-in creative mode only when designing farms within "real world" conditions. This functions removes all entities such as
-mobs and items. This is because the clearing operation creates items when some blocks are replaced. Caves can also have
-mobs and minecarts inside them which when designing farms are best removed.
-
-This is not intended for use in a survival world. Use at your own risk!
-
-This datapack contains a function that is useful in creative for creating a perimeter when designing mob farms. To use,
-find a 21x21 chunk area to wish to clear. Go to the centre chunk and stand in the most northwesterly block. Then run
-the following command:
-
-```
-/function logical:perimeter/clear
-```
-
-A progress bar appears so you can see how far until completion. A 21x21 chunk area from level 5 to 255 will be replaced
-with air. A layer of glass is added just above the bedrock at level 6. All items and entities are removed. A diamond
-block is placed under your feet as a marker for the centre chunk.
-
-If you don't stand in the north-west corner of a chunk, that's ok but the cleared area will not be chunk aligned.
+This function was intended for use in creative mode only when designing mob farms before WorldEdit and other mods were
+available in 1.14. Now they are, I'm removing this as those mods are a better solution.
 
 ## Spawn Sphere
 

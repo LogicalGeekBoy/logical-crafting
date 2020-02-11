@@ -1,6 +1,6 @@
 # Logical Crafting
 
-Custom crafting recipes for Minecraft 1.13 that I wish were in the default game:
+Custom crafting recipes for Minecraft 1.15 that I wish were in the default game:
 
 ## Renewable Coral Blocks
 
@@ -96,11 +96,16 @@ this isn't just when you are killed by another player but by anyway of dying.
 4. Place the datapack zip file in the `datapacks` folder.
 5. Start your world. If it doesn't work, using the command `/reload`.
 
+## Development Requirements
+
+* Install Ruby 2.6+
+* Install the Rubyzip gem with `gem install rubyzip`
+
 ## Building
 
 To build the data pack, run the following that will update the `.zip` file in the `dist` folder. This file can then be
 dropped into a worlds `datapacks` folder:
 
 ```
-$ ./build.sh
+$ ruby build.rb
 ```

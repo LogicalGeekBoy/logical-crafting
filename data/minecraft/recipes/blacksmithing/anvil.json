@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "#",
+        "A"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_block"
+        },
+        "A": {
+            "tag": "minecraft:anvil"
+        }
+    },
+    "result": {
+        "item": "minecraft:anvil",
+        "count": 1
+    },
+    "group": "Blacksmithing"
+}

@@ -44,6 +44,10 @@ For testing, you can give yourself these items just before the warning with:
 /give @p minecraft:diamond_axe{Damage:1535} 1
 /give @p minecraft:diamond_hoe{Damage:1535} 1
 /give @p minecraft:elytra{Damage:406} 1
+/give @p minecraft:netherite_pickaxe{Damage:2005} 1
+/give @p minecraft:netherite_shovel{Damage:2005} 1
+/give @p minecraft:netherite_axe{Damage:2005} 1
+/give @p minecraft:netherite_hoe{Damage:2005} 1
 ```
 
 ## Perimeter Clearing

@@ -24,11 +24,13 @@ wool block.
 
 ![corrected wool](https://raw.githubusercontent.com/logicalgeekboy/logical-crafting/master/screenshots/wool.png)
 
-## Other Quality of life recipes
+## Uncraft Quartz Block
 
-This datapack has a number of QoL recipes to enhance the game over 100% vanilla but not in a way that breaks the game:
+Other ore style blocks such as redstone, diamond, iron, gold, etc can all be crafted into block form and then back again to
+item form. The one missing is quartz! It can be useful as a storage block but also as quartz is precious, sometimes you over
+make quartz blocks and need the quartz back for crafting other items.
 
-* Uncraft Quartz Block -> 4 Quartz
+![quartz block](https://raw.githubusercontent.com/logicalgeekboy/logical-crafting/master/screenshots/quartz.png)
 
 ## Item about to break warning
 

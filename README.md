@@ -29,7 +29,6 @@ wool block.
 This datapack has a number of QoL recipes to enhance the game over 100% vanilla but not in a way that breaks the game:
 
 * Uncraft Quartz Block -> 4 Quartz
-* Smelt Sandstone -> Smooth Sandstone (same as 1.14)
 
 ## Item about to break warning
 
@@ -50,32 +49,6 @@ For testing, you can give yourself these items just before the warning with:
 /give @p minecraft:netherite_hoe{Damage:2005} 1
 ```
 
-## Perimeter Clearing
-
-This function was intended for use in creative mode only when designing mob farms before WorldEdit and other mods were
-available in 1.14. Now they are, I'm removing this as those mods are a better solution.
-
-## Spawn Sphere
-
-Hostile mobs spawn within a sphere with a radius of 128 block around the player. It's important to know about this
-when building a mob farm as you can improve the rates drastically by only allowing mobs to spawn inside your farm.
-Depending on the farm, you can either remove block, light them up or cover them with a non-spawnable block. The problem
-is knowing where this sphere really is.
-
-This datapack contains a function that will summon a number of armour stands which mark this sphere. Just stand on your
-AFK spot and run:
-
-```
-/function logical:spawn_sphere/show
-```
-
-You can then move around and condition the area within this sphere. Once you are done, you can remove the sphere again
-with:
-
-```
-/function logical:spawn_sphere/hide
-```
-
 ## Villager Clock
 
 In 1.14, villagers now have a schedule where they perform different tasks at set times. It's not always easy to tell
@@ -86,11 +59,6 @@ with:
 /function logical:clock/on
 /function logical:clock/off
 ```
-
-## Player Head Drop
-
-Whenever a player dies in anyway, they will drop their head in amongst their gear. As I mainly play in single player
-this isn't just when you are killed by another player but by anyway of dying.
 
 ## How to install
 

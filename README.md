@@ -43,8 +43,8 @@ but instead of using a bow, we use 3 sticks and 3 string, plus a dropper which c
 
 ## Item about to break warning
 
-When a diamond pickaxe, shovel, axe, hoe or elytra has only 25 durability remaining a warning message is posted in the chat and a
-breaking sound is played.
+When a diamond or netherite pickaxe, shovel, axe, hoe or elytra has only 25 durability remaining a warning message is shown and a
+notification sound is played.
 
 For testing, you can give yourself these items just before the warning with:
 
@@ -60,9 +60,11 @@ For testing, you can give yourself these items just before the warning with:
 /give @p minecraft:netherite_hoe{Damage:2005} 1
 ```
 
+![item breaking](https://raw.githubusercontent.com/logicalgeekboy/logical-crafting/master/screenshots/breaking.png)
+
 ## Villager Clock
 
-In 1.14, villagers now have a schedule where they perform different tasks at set times. It's not always easy to tell
+In 1.14+, villagers now have a schedule where they perform different tasks at set times. It's not always easy to tell
 what part of the schedule a villager is in especially in dimensions without the sun. You can show or hide the clock
 with:
 
@@ -70,6 +72,8 @@ with:
 /function logical:clock/on
 /function logical:clock/off
 ```
+
+![item breaking](https://raw.githubusercontent.com/logicalgeekboy/logical-crafting/master/screenshots/clock.png)
 
 ## How to install
 

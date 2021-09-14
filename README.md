@@ -32,6 +32,15 @@ make quartz blocks and need the quartz back for crafting other items.
 
 ![quartz block](https://raw.githubusercontent.com/logicalgeekboy/logical-crafting/master/screenshots/quartz.png)
 
+## Easier Dispenser
+
+Dispensers are a pain to craft! This is because they require a bow which is a non-stackable item. When we craft lots of dispensers
+we need to click for each one which is just boring. To fix this, I've added the following recipe which requires the same materials
+but instead of using a bow, we use 3 sticks and 3 string, plus a dropper which covers the cobblestone and redstone required. Credit to
+[u/NickNackGus](https://www.reddit.com/r/minecraftsuggestions/comments/7coesq/alternate_dispenser_recipe_suggestion/) for this one.
+
+![quartz block](https://raw.githubusercontent.com/logicalgeekboy/logical-crafting/master/screenshots/dispenser.png)
+
 ## Item about to break warning
 
 When a diamond pickaxe, shovel, axe, hoe or elytra has only 25 durability remaining a warning message is posted in the chat and a
